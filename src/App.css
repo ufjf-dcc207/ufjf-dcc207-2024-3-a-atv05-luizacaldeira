@@ -1,37 +1,58 @@
-
 .app {
-  display: grid; 
-  gap: 1rem; 
-  place-items: left; 
-  grid-template-rows: auto;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  gap: 1cm;
+  font-size: larger;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
-
 
 .funcionarios {
-    border: 1px solid rgb(101, 103, 133);
-    border-radius: 25px;
+    margin-bottom: 2rem;
+    display: grid;
     padding: 1em;
     font-weight: 600;
-    box-shadow: 0.1em 0.1em 0,2em;
     background-color: whitesmoke;
+    grid-template-areas: 
+    "titulo titulo titulo titulo"
+    "nome setor data salariob"
+    "dependentes dependentes dependentes dependentes"
+    "salariot salariot salariot salariot"
+    ;
 }
+.funcionarios .titulo {
+  grid-area: titulo;
+  background-color: darkblue;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+}
+.funcionarios .nome {
+  grid-area: nome;
+}
+.funcionarios .setor {
+  grid-area: setor;
+}
+.funcionarios .data {
+  grid-area: data;
+}
+.funcionarios .salbase {
+  grid-area: salariob;
+}
+.funcionarios .dependentes {
+  grid-area: dependentes;
+}
+.funcionarios .saltotal { 
+  grid-area: salariot; 
+  background-color: lightblue;
+  text-align: center;
+  border-radius: 50px;
+}
+
 .funcionarios h3 {
   color: darkblue;
 }
-.funcionarios h4 {
-  color: darkred;
-}
-
 
 .dependentes {
-    border: 1px solid grey;
-    border-radius: 25px;
     padding: 0.5em;
     font-weight: 600;
     font-size: small;
-    box-shadow: 0.1em 0.1em 0,2em;
-    background-color:white;
+    border-top: 1px solid #ccc;
 }
-

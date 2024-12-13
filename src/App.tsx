@@ -2,6 +2,8 @@ import './App.css'
 import Funcionarios from './Funcionarios';
 import dados from'./dados.json'
 
+/*Você tem a liberdade para escolher a exibição usando CSS, mas deve apresentar as datas e valores no formato local e calcular o salário total contando os abonos por dependentes durante o desenho da interface.*/
+
 
 function App() {
   const funcionarios = dados.funcionarios;
